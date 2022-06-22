@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&display=swap" rel="stylesheet">
+    <!--end font-->
+    <!-- start link -->
+    <link rel="stylesheet" href="icon/all.min.css">
+    <link rel="stylesheet" href="icon/norm.css">
+    <link rel="stylesheet" href="icon/style.css">
+    <!-- end link -->
+    <title>Req_loan</title>
+</head>
+
+<body>
+    <div class="head">
+
+        <div class="container">
+
+
+            <li><a href="hom.html">home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="result.html">Result</a></li>
+        </div>
+    </div>
+    <div class="head7">
+        <div class="container">
+       
+            <form action="" name="f">
+                <table class="table">
+                <tr>
+                    <td>
+                        أدخل الاسم كامل 
+                    </td>
+                    <td>
+                        <input type="text" name="name" onchange="chkname()" id="name" required>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        الرقم الوطني 
+                    </td>
+                    <td>
+                        <input type="text" id="number" name="number" maxlength="11" required onchange="chknum()">
+                    </td>
+                </tr>
+                <tr>
+                    <td>تاريخ الولادة</td>
+                    <td><input type="text" required name="date" id="date" onchange="chkdate()"></td>
+                </tr>
+                <tr>
+                    <td>رقم الموبايل</td>
+                  <td>  <input type="number" placeholder="+963" required name="numberph" id="numberph" onchange="chknumphon()"></td>
+                </tr>
+                <tr>
+                    <td>الإيميل</td>
+                    <td><input type="text" required id="email" name="email" onchange="chkemail()"></td>
+                </tr>
+                <tr>
+                    <td>قيمة القرض المطلوبة </td>
+                    <td><input type="number" name="" id="" min="1" max="1000000" style="width: 260px;" required></td>
+                </tr>
+<tr>
+    <td>نوع القرض المطلوب</td>
+    <td><input type="text" required name="kd" onchange="chkd()" ></td>>
+</tr>
+<tr>
+    <td>
+عدد سنوات القرض
+    </td>
+    <td>
+        <select name="" id="" required>
+            <option value=""></option>
+            <option value="">3</option>
+            <option value="">5</option>
+            <option value="">10</option>
+            <option value="">15</option>
+            <option value="">20</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td>طريقة تسديد الدفعات </td>
+
+<td>
+    <select name="" id="" required>
+        <option value=""></option>
+        <option value="">شهرية </option>
+        <option value="">ربعية</option>
+        <option value="">سنوية</option>
+        </select>
+</td></tr>
+
+<tr>
+    <td>
+        <canvas id="canvas" width="200" height="70"></canvas>
+        <button id="reload-button">
+            <i class="fa-solid fa-arrow-rotate-right"></i>
+        </button>
+        </div>
+        <input type="text" id="user-input" placeholder="Enter the text in the image" required />
+    </td>
+</tr>
+<tr>
+<td><input type="submit" onclick="send()"></td>
+</tr>
+</table>
+            </form>
+        
+        </div>
+        
+
+
+        <script src="myfunction.js"></script>
+        </body>
+        </html>
+        
+    
